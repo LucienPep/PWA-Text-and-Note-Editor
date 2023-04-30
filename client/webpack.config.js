@@ -22,13 +22,11 @@ module.exports = () => {
         template: './index.html',
         title: 'Contact Cards'
       }),
-
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-
-
+      
     ],
 
     module: {
