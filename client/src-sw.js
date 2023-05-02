@@ -27,7 +27,7 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
+//cache assests used within the application to be usable in the PWA manifest
 registerRoute(({ request }) => ['style', 'script', 'worker', 'image']
 .includes(request.destination),
 new StaleWhileRevalidate({
